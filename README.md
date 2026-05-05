@@ -31,12 +31,15 @@ Implemented and validated:
 - Provider profile files for OpenAI/AWS Bedrock/Azure/Vertex/GovCloud template.
 
 ### Planned for Phase 2+
-- Full Spring AI integration and provider abstraction implementations.
+- Full Spring AI integration and RAG provider abstraction implementations.
 - LangChain4j-style multi-agent orchestration internals.
 - TCPED workflow APIs and persisted timeline/reporting.
 - Sensor orchestration and tasking APIs.
-- Catalog/ontology/world model/geospatial APIs and pgvector-backed retrieval.
-- Hardened security, compliance automation, and production observability depth.
+- DLP alert triage
+- NIST/CIS-style compliance mapping
+- Space-domain awarness simulation module
+- Catalog/ontology/world model/geospatial APIs and vector store abstraction with pgvector-backed retrieval.
+- Hardened security, compliance automation, and production observability depth & audit ready reporting enhancements.
 
 These diagrams show the target architecture and scaffolded direction.
 Phase 1/1.5 only implements mock/local demo behavior.
