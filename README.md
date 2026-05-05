@@ -1,5 +1,5 @@
 # missionops-ai-orchestrator
-## Java/Spring Boot Multi-Agent RAG Platform for DLP endpoint security, TCPED automation, space-cyber intelligence, RAG, Sensor Fusion, Metadata Cataloging, Mission Intelligence and synthetic LEO anomaly triage.
+## Java/Spring Boot Multi-Agent RAG Platform for DLP endpoint security, TCPED automation, Space-Cyber Mission Intelligence, Sensor Fusion, Metadata Cataloging, and synthetic LEO anomaly triage.
 DISCLAIMER:
 This project is a synthetic, unclassified, educational portfolio simulation. It is not an operational command-and-control system. It does not connect to real sensors, drones, satellites, classified systems, or weapons systems. All scenarios, documents, events, and data are mock examples designed to demonstrate Java/Spring Boot, AI/RAG, multi-agent orchestration, metadata cataloging, secure APIs, and DevOps architecture patterns.
 
