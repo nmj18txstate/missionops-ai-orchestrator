@@ -1,0 +1,7 @@
+spring:
+  config:
+    activate:
+      on-profile: aws-bedrock
+missionops:
+  ai:
+    provider: aws-bedrock
