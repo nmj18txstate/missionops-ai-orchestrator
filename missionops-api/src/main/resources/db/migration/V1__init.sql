@@ -1,0 +1,15 @@
+create table if not exists documents(id varchar(64) primary key, file_name varchar(255));
+create table if not exists document_chunks(id varchar(64) primary key, document_id varchar(64), chunk_text text);
+create table if not exists metadata_catalog(id varchar(64) primary key, document_id varchar(64), classification varchar(64));
+create table if not exists document_lineage(id varchar(64) primary key, document_id varchar(64), source_system varchar(128));
+create table if not exists agent_audit_log(id varchar(64) primary key, trace_id varchar(64), agent_name varchar(64));
+create table if not exists mission_workflow(id varchar(64) primary key, stage varchar(64));
+create table if not exists mission_task(id varchar(64) primary key, mission_id varchar(64));
+create table if not exists mission_timeline_event(id varchar(64) primary key, mission_id varchar(64));
+create table if not exists sensor_event(id varchar(64) primary key, event_type varchar(64));
+create table if not exists collection_request(id varchar(64) primary key, mission_id varchar(64));
+create table if not exists intelligence_report(id varchar(64) primary key, mission_id varchar(64));
+create table if not exists world_model_entity(id varchar(64) primary key, type varchar(64));
+create table if not exists world_model_relationship(id varchar(64) primary key, relationship_type varchar(64));
+create table if not exists ontology_concept(id varchar(64) primary key, name varchar(128));
+create table if not exists ontology_relationship(id varchar(64) primary key, from_concept varchar(128));

@@ -1,0 +1,7 @@
+spring:
+  config:
+    activate:
+      on-profile: mock
+missionops:
+  ai:
+    provider: mock

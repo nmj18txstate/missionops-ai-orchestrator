@@ -1,0 +1,7 @@
+spring:
+  config:
+    activate:
+      on-profile: govcloud-template
+missionops:
+  ai:
+    provider: govcloud-template

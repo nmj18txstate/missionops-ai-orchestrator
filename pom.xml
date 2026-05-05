@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.3.5</version>
+    <relativePath/>
+  </parent>
+
+  <groupId>com.nityam</groupId>
+  <artifactId>missionops-ai-orchestrator</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>missionops-ai-orchestrator</name>
+
+  <properties>
+    <java.version>21</java.version>
+  </properties>
+
+  <modules>
+    <module>missionops-common</module>
+    <module>missionops-rag</module>
+    <module>missionops-agents</module>
+    <module>missionops-ingestion</module>
+    <module>missionops-catalog</module>
+    <module>missionops-tcped</module>
+    <module>missionops-sensors</module>
+    <module>missionops-worldmodel</module>
+    <module>missionops-geospatial</module>
+    <module>missionops-simulation</module>
+    <module>missionops-api</module>
+  </modules>
+</project>

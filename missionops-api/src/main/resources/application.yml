@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: missionops-api
+  datasource:
+    url: jdbc:h2:mem:missionops;MODE=PostgreSQL;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics

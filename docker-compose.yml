@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: missionops
+      POSTGRES_USER: missionops
+      POSTGRES_PASSWORD: missionops
+    ports: ["5432:5432"]
+  app:
+    build: .
+    command: ["mvn","-pl","missionops-api","spring-boot:run"]
+    depends_on: [postgres]
+    ports: ["8080:8080"]
