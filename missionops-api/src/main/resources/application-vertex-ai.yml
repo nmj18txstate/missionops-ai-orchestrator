@@ -1,0 +1,7 @@
+spring:
+  config:
+    activate:
+      on-profile: vertex-ai
+missionops:
+  ai:
+    provider: vertex-ai
