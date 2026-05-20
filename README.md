@@ -163,6 +163,31 @@ Audit trace check:
 ```bash
 curl -s http://localhost:8080/api/v1/audit/traces/trace-isr-demo-001
 ```
+### Windows PowerShell audit trace example
+
+In Windows PowerShell, use `Invoke-RestMethod` instead of `curl`, because PowerShell aliases `curl` to `Invoke-WebRequest`.
+
+```powershell
+Invoke-RestMethod -Uri "http://localhost:8080/api/v1/audit/traces/trace-isr-demo-001"
+```
+
+Expected output:
+
+```text
+inputSummary : UNKNOWN_OBJECT_DETECTED / SPACE
+createdAt    : 2026-05-20T01:50:40.854290500Z
+missionId    : MIS-2026-0501-001
+traceId      : trace-isr-demo-001
+agentName    : SyntheticIsrTriage
+```
+
+This confirms:
+
+- UNKNOWN_OBJECT_DETECTED / SPACE event was processed
+- Mission ID was generated
+- Audit trace was recorded
+- SyntheticIsrTriage handled the event
+
 # Notes on Codex environment
 If Maven Central access is restricted in the execution environment, dependency download may fail even with correct POM setup. In that case, run the commands above in a normal local developer environment with internet access.
 
