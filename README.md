@@ -172,7 +172,6 @@ Invoke-RestMethod -Uri "http://localhost:8080/api/v1/audit/traces/trace-isr-demo
 ```
 
 Expected output:
-
 ```text
 inputSummary : UNKNOWN_OBJECT_DETECTED / SPACE
 createdAt    : 2026-05-20T01:50:40.854290500Z
@@ -181,7 +180,7 @@ traceId      : trace-isr-demo-001
 agentName    : SyntheticIsrTriage
 ```
 
-This confirms:
+Terminal output confirms:
 - UNKNOWN_OBJECT_DETECTED / SPACE event was processed
 - Mission ID was generated
 - Audit trace was recorded
