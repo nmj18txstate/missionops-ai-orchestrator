@@ -182,14 +182,12 @@ agentName    : SyntheticIsrTriage
 ```
 
 This confirms:
-
 - UNKNOWN_OBJECT_DETECTED / SPACE event was processed
 - Mission ID was generated
 - Audit trace was recorded
 - SyntheticIsrTriage handled the event
 
-# Notes on Codex environment
-If Maven Central access is restricted in the execution environment, dependency download may fail even with correct POM setup. In that case, run the commands above in a normal local developer environment with internet access.
+<img width="537" height="162" alt="Screenshot 2026-05-19 201058" src="https://github.com/user-attachments/assets/e4fc8382-e1e1-4cad-9160-0dc72e97fffb" />
 
 # Project Talking Points
 - Built a Java/Spring Boot AI platform for secure mission document intelligence.
