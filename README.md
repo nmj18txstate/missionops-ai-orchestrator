@@ -188,9 +188,6 @@ This confirms:
 - Audit trace was recorded
 - SyntheticIsrTriage handled the event
 
-# Notes on Codex environment
-If Maven Central access is restricted in the execution environment, dependency download may fail even with correct POM setup. In that case, run the commands above in a normal local developer environment with internet access.
-
 # Project Talking Points
 - Built a Java/Spring Boot AI platform for secure mission document intelligence.
 - Implemented a Phase 1 mock RAG interaction with citations and audit trace output.
